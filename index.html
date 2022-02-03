@@ -78,7 +78,7 @@
             <source src="media/video.mp4" type="video/mp4">
         </video>
         <!--Video for mobile-->
-        <video class="videomobile" width="100%" height="auto" loop autoplay muted>
+        <video id="videomobile" width="100%" height="auto" loop autoplay muted>
             <source src="media/videomobile.mp4" type="video/mp4">
         </video>
     </main>
@@ -116,10 +116,12 @@
     <script>
         function openNav() {
             document.getElementById("myNav").style.height = "100%";
+            document.getElementById("videomobile").style.display = "none";
         }
 
         function closeNav() {
             document.getElementById("myNav").style.height = "0%";
+            document.getElementById("videomobile").style.display = "block";
         }
 
         var video = document.getElementById("myVideo");
