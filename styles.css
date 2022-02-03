@@ -538,4 +538,9 @@ h2{
 .squares{
 
     padding-bottom: 20px;
+
 }
+
+.squares :hover{
+    box-shadow: 0 0 20px black; 
+  }
