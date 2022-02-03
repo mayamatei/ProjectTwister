@@ -69,7 +69,7 @@ body {
 }
 
 .gallery h1 {
-    font-family: "Harlow Solid";
+    font-family: 'Abril Fatface';
     color: black;
     font-size: 70px;
     margin-left: 30px;
@@ -254,7 +254,7 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
         color: white;
-        font-family: 'Vollkorn', serif;
+        font-family: 'Volkorn', serif;
         text-decoration: none;
         text-align: center;
     }
@@ -419,7 +419,7 @@ body {
 
 h1 {
 
-    font-family: "Playfair Display medium";
+    font-family: 'Abril Fatface, cursive';
     margin-top: 2em;
     font-size: 50px;
     text-align: center;
@@ -450,6 +450,10 @@ footer {
         display: none;
     }
 
+    .videoweb{
+
+        z-index: -1;
+    }
 }
 
 @media only screen and (max-width: 1020px) {
@@ -459,10 +463,7 @@ footer {
         display: none;
     }
 
-    #videomobile {
-
-        margin-top: 70px;
-    }
+   
 }
 
 .footer_container {
@@ -491,7 +492,7 @@ footer {
 
 a {
 
-    font-family: 'Playfair Display medium';
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
     font-weight: bolder;
     color: black;
@@ -516,7 +517,7 @@ a {
 /*Products*/
 
 
-.items{
+.items {
 
     display: flex;
     flex-wrap: wrap;
@@ -566,80 +567,248 @@ a {
         height: auto;
     }
 
-    .squares{
+    .squares {
 
         border: 2px solid black;
         width: 90%;
         margin: 20px 0;
         background-color: white;
-    
+
     }
 
-    h2{
-
+    h2 {
+        font-family: 'Abril Fatface';
         margin-left: 20px;
+        font-size: 30px;
     }
 }
-    /*Web view*/
 
-    @media only screen and (min-width: 1021px) {
+/*Web view*/
 
-        .shop {
+@media only screen and (min-width: 1021px) {
 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            
-            
+    .shop {
 
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-        #twisterimage {
 
-            width: 400px;
-            height: auto;
-            background-color: white;
-            margin-top: 140px;
-            margin-left: 20px;
-            margin-right: 20px;
 
-        }
-
-        #texts {
-
-            width: 600px;
-            height: auto;
-            background-color: white;
-            padding: 10px;
-        }
-
-        .shopflexitem {
-
-            margin: 10px;
-            height: auto;
-            border: 2px solid black;
-            justify-content: center;
-            background-color: white;
-        }
-
-        .games {
-
-            width: 100%;
-            height: auto;
-        }
-
-        .squares{
-
-            border: 2px solid black;
-            width: 20%;
-            margin: 20px 20px;
-            background-color: white;
-        }
-
-        h2{
-
-            margin-left: 60px;
-        }
     }
 
+    #twisterimage {
+
+        width: 400px;
+        height: auto;
+        background-color: white;
+        margin-top: 140px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    #texts {
+
+        width: 600px;
+        height: auto;
+        background-color: white;
+        padding: 10px;
+    }
+
+    .shopflexitem {
+
+        margin: 10px;
+        height: auto;
+        border: 2px solid black;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .games {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .squares {
+
+        border: 2px solid black;
+        width: 20%;
+        margin: 20px 20px;
+        background-color: white;
+    }
+
+    .squares :hover {
+
+        box-shadow: 0 0 20px black;
+    }
+
+    h2 {
+
+        margin-left: 60px;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+.hashtag {
+
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/*History*/
+
+.history {
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.historyitem {
+
+    margin: 10px;
+    height: auto;
+    border: 2px solid black;
+    justify-content: center;
+    background-color: white;
+}
+
+p {
+
+    padding: 10px;
+}
+
+
+
+@media only screen and (min-width: 1021px) {
+
+    .historyitem {
+
+        width: 700px;
+        overflow: hidden;
+    }
+
+    .twisterhistory {
+     
+        
+        transition: transform .5s ease;
+
+    }
+
+    .twisterhistory:hover {
+        transform: scale(1.5);
+    }
+
+    #desc {
+
+        font-size: 22px;
+        font-family: 'Playfair Display', serif;
+    }
+
+}
+
+@media only screen and (max-width: 1020px) {
+
+    .historyitem {
+
+        width: 90%;
+    }
+
+    .twisterhistory {
+
+        width: 100%;
+    }
+
+    .twisterhistory :hover {
+        transform: scale(1.5);
+        
+    }
+
+    #desc {
+
+        font-size: 18px;
+        line-height: 30px;
+        font-family: 'Playfair Display', serif;
+    }
+
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
   
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -5;
+  }
+  
+  .over{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+   
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    
+  }
+  
+  .container:hover .over {
+    bottom: 0;
+    height: 100%;
+   
+  }
+  
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    z-index: 0;
+  }
+
+  .coninfo{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    
+   
+
+  }
+
+  .container{
+
+    width: 20%;
+    padding: 30px;
+    min-width: 300px;
+    z-index: 0;
+  }
+
+  .space{
+
+    min-height: 555px;
+  }
+
+
+  @media only screen and (max-width: 1020px) {
+
+  }

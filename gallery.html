@@ -136,7 +136,10 @@
             <img src="media/twisterwall.png" alt="people at twister wall">
 
         </section>
+
     </div>
+
+    <h2 class="hashtag">Show us how you have fun with #twister</h2>
 
     <footer>
 
@@ -165,10 +168,25 @@
     <script>
         function openNav() {
             document.getElementById("myNav").style.height = "100%";
+            document.getElementById("videomobile").style.display = "none";
         }
 
         function closeNav() {
             document.getElementById("myNav").style.height = "0%";
+            document.getElementById("videomobile").style.display = "block";
+        }
+
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
         }
     </script>
 </body>
