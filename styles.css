@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-image: url('media/Background.png');
+    background-repeat: repeat-y;
+
+
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 7em;
+    height: auto;
+    margin-left: 1.5em;
+    margin-top: 1.2em;
+}
+
+.navbar li a:hover {
+    color: #ca3b12;
+    text-decoration: underline;
+}
+
+.navbar li {
+    list-style: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-family: Abril Fatface;
+    display: block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.logosection {
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.gallery h1 {
+    font-family: "Harlow Solid";
+    color: black;
+    font-size: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: underline;
+
+}
+
+.gallery section a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.gallery section img {
+    width: 275px;
+    height: 250px;
+    box-sizing: border-box;
+    max-width: 300px;
+    border: 2px solid black;
+    border-radius: 6px;
+    
+}
+.gallery section img:hover {
+    box-shadow: 0 0 20px black; 
+  }
+.gallery section {
+    font-family: 'Vollkorn', serif;
+    width: 300px;
+    height: 300px;
+
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+
+}
+
+.gallery section:hover {
+    background-color: none;
+    text-decoration: none;
+}
+
+.gallery section a:hover {
+    color: rgb(111, 143, 74);
+}
+
+img {
+
+    background-color: black;
+}
+
+/*Mobile nav*/
+
+
+@media only screen and (max-width: 1020px) {
+
+    .webnav {
+
+        display: none;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        background-color: white;
+
+
+    }
+
+    .overlay a {
+
+        text-decoration: none;
+        font-size: 28px;
+        color: #333333;
+        display: block;
+        transition: 0.3s;
+        background-color: white;
+
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: tomato;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 60px;
+    }
+
+    .menu {
+
+        position: fixed;
+        top: 10px;
+        right: 25px;
+        font-size: 60px;
+        background: none;
+
+
+    }
+
+    .menuitem {
+
+        margin: 2% 0;
+    }
+
+    @media screen and (max-height: 450px) {
+        .overlay {
+            overflow-y: auto;
+        }
+
+        .overlay a {
+            font-size: 10px;
+
+        }
+
+        .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            left: 35px;
+        }
+    }
+
+
+    .button {
+        background-color: white;
+        border: none;
+        color: #333333;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        opacity: 1
+    }
+
+
+
+    .navigation__container {
+        background-color: tomato;
+        position: sticky;
+        top: 0;
+
+    }
+
+    .mobileiconlabel {
+        display: inline-block;
+        color: white;
+        background: tomato;
+        font-style: normal;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .menuitem {
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        font-family: 'Vollkorn', serif;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    /*Hide checkbox and menuitems until clicked*/
+    .menuitems__container,
+    .mobileicon {
+        display: none;
+    }
+
+    /*Show menuitems when mobileicon-label is clicked*/
+    .navigation__container input:checked~.menuitems__container {
+        display: block;
+
+        padding-bottom: 100%;
+        background: white;
+    }
+
+    /* diplay logo to the right*/
+    .companylogo {
+        position:absolute;
+        color: white;
+        text-decoration: none;
+        top: 12px;
+        right: 10px;
+        width: 240px;
+    }
+
+    #logomenu {
+
+        display: inline-block;
+        align-items: center;
+        padding-left: 20px;
+        background: white;
+        width: 5em;
+        height: auto;
+
+
+
+    }
+
+    .lines {
+
+        display: inline-block;
+        left: 10px;
+        background: none;
+
+    }
+
+    form {
+
+        display: inline-block;
+        color: #0f0b0b;
+        text-align: center;
+    }
+
+
+    .input {
+        position: relative;
+        opacity: 100%;
+        z-index: 0;
+        text-align: center;
+        padding: 5px;
+
+    }
+
+
+    header {
+
+        display: flex;
+        justify-items: center;
+        flex-direction: row;
+        height: 10vh;
+        width: 100%;
+        flex-wrap: wrap;
+        border: 2px solid black;
+    }
+
+    .logo {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+    }
+
+    .gallery section img {
+        min-width: 100%;
+
+    }
+}
+
+/*Web nav*/
+
+@media only screen and (min-width: 1021px) {
+
+    .mobilenav {
+        display: none;
+    }
+
+    .webnav {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-color: white;
+
+
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 10vh;
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+
+}
+
+.gallery {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+h1 {
+
+    font-family: "Harlow Solid";
+    margin-top: 2em;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+/*footer*/
+
+footer {
+
+    bottom: 0;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 2px solid black;
+}
+
+.nobg {
+    background: none;
+}
+
+@media only screen and (min-width: 1020px) {
+
+    .videomobile {
+
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1020px) {
+
+    .videoweb {
+
+        display: none;
+    }
+}
+
+.footer_container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.socials_image{
+
+    width: 2em;
+    background-color:white;
+    margin-left: 5x;
+    margin-right: 10px;
+}
+
+.button{
+
+    border: 2px solid black;
+    background-color: #93b54c;
+    padding: 1px 50px;
+ 
+}
+
+a{
+
+    font-family: 'Playfair Display medium';
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 20px;
+}
+
+.copyright_text{
+
+    font-size: 18px;
+
+}
+
+.socials_container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    
+}
+
+/*Products*/
+
+.sqrs{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.gametitle{
+    text-align:center;
+    display: none;
+}
+
+.shop{
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+}
+
+.twisterimage{
+
+    width: 600px;
+    height: auto;
+    margin: 35px;
+    border: 2px solid black;
+}
+
+h2{
+    font-family: 'Abril Fatface';
+    margin: 35px;
+    text-align: left;
+}
+
+
+
+
+.texts{
+
+    margin: 35px;
+    background: white;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.games{
+
+    border: 2px solid black;
+    
+}
+
+.squares{
+
+    padding-bottom: 20px;
+}
