@@ -11,6 +11,10 @@ body {
 
 }
 
+body {
+    padding-top: 90px;
+}
+
 
 .navbar {
     display: flex;
@@ -261,7 +265,7 @@ body {
         display: none;
     }
 
-    
+
 
     /*Show menuitems when mobileicon-label is clicked*/
     .navigation__container input:checked~.menuitems__container {
@@ -357,7 +361,7 @@ body {
 
     }
 
-    
+
 }
 
 /*Web nav*/
@@ -511,65 +515,131 @@ a {
 
 /*Products*/
 
-.sqrs {
+
+.items{
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
-.gametitle {
-    text-align: center;
-    display: none;
+
+/*Mobile view*/
+
+@media only screen and (max-width: 1020px) {
+
+    .shop {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    #twisterimage {
+
+        width: 90%;
+        height: auto;
+        background-color: white;
+
+        padding-left: 20px;
+    }
+
+    #texts {
+
+        background-color: white;
+        padding: 10px;
+    }
+
+    .shopflexitem {
+
+        margin: 10px;
+        height: auto;
+        border: 2px solid black;
+        justify-content: center;
+    }
+
+    .games {
+
+        width: 90%;
+        height: auto;
+    }
+
+    .squares{
+
+        border: 2px solid black;
+        width: 90%;
+        margin: 20px 0;
+        background-color: white;
+    
+    }
+
+    h2{
+
+        margin-left: 20px;
+    }
 }
+    /*Web view*/
 
-.shop {
+    @media only screen and (min-width: 1021px) {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+        .shop {
 
-}
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            
 
-.twisterimage {
+        }
 
-    width: 600px;
-    height: auto;
-    margin: 35px;
-    border: 2px solid black;
-}
+        #twisterimage {
 
-h2 {
-    font-family: 'Abril Fatface';
-    margin: 35px;
-    text-align: left;
-}
+            width: 400px;
+            height: auto;
+            background-color: white;
+            margin-top: 140px;
+            margin-left: 20px;
+            margin-right: 20px;
 
+        }
 
+        #texts {
 
+            width: 600px;
+            height: auto;
+            background-color: white;
+            padding: 10px;
+        }
 
-.texts {
+        .shopflexitem {
 
-    margin: 35px;
-    background: white;
-    border: 2px solid black;
-    padding: 10px;
-}
+            margin: 10px;
+            height: auto;
+            border: 2px solid black;
+            justify-content: center;
+            background-color: white;
+        }
 
-.games {
+        .games {
 
-    border: 2px solid black;
+            width: 100%;
+            height: auto;
+        }
 
-}
+        .squares{
 
-.squares {
+            border: 2px solid black;
+            width: 20%;
+            margin: 20px 20px;
+            background-color: white;
+        }
 
-    padding-bottom: 20px;
+        h2{
 
-}
+            margin-left: 60px;
+        }
+    }
 
-.squares :hover {
-    box-shadow: 0 0 20px black;
-}
+  
