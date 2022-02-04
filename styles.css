@@ -69,7 +69,7 @@ body {
 }
 
 .gallery h1 {
-    font-family: 'Abril Fatface';
+    font-family: 'Abril Fatface, cursive';
     color: black;
     font-size: 70px;
     margin-left: 30px;
@@ -343,7 +343,7 @@ body {
     .logo {
 
         display: block;
-        margin-left: -10px;
+        margin-left: 10px;
         margin-right: auto;
         margin-right: 5px;
         width: 100%;
@@ -448,18 +448,12 @@ footer {
 
 @media only screen and (min-width: 1020px) {
 
-    #videomobile {
+    .videomobile {
 
         display: none;
 
     }
 
-    .videoweb {
-
-        z-index: -1;
-        width: 100%;
-        height: auto
-    }
 }
 
 @media only screen and (max-width: 1020px) {
@@ -469,12 +463,24 @@ footer {
         display: none;
     }
 
-    .videomobile {
 
-        width: 100%;
-        height: auto;
-    }
 }
+
+.videoweb {
+
+    z-index: -1;
+    width: 100%;
+    height: auto
+}
+
+
+.videomobile {
+
+    width: 100%;
+    height: auto;
+}
+
+
 
 .footer_container {
 
