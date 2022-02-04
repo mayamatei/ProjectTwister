@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    padding-top: 90px;
+    padding-top: 60px;
 }
 
 
@@ -112,7 +112,7 @@ body {
 }
 
 .gallery section:hover {
-    
+
     text-decoration: none;
 }
 
@@ -397,7 +397,7 @@ body {
         border-bottom: 2px solid black;
         position: fixed;
         top: 0;
-        z-index:10;
+        z-index: 10;
     }
 
 
@@ -450,13 +450,14 @@ footer {
     #videomobile {
 
         display: none;
-        
+
     }
 
-    .videoweb{
+    .videoweb {
 
         z-index: -1;
         width: 100%;
+        height: auto
     }
 }
 
@@ -467,10 +468,11 @@ footer {
         display: none;
     }
 
-   .videomobile{
+    .videomobile {
 
-    width: 100%;
-   }
+        width: 100%;
+        height: auto;
+    }
 }
 
 .footer_container {
@@ -700,8 +702,8 @@ p {
     }
 
     .twisterhistory {
-     
-        
+
+
         transition: transform .5s ease;
 
     }
@@ -732,7 +734,7 @@ p {
 
     .twisterhistory :hover {
         transform: scale(1.5);
-        
+
     }
 
     #desc {
@@ -747,36 +749,36 @@ p {
 .container {
     position: relative;
     width: 50%;
-  }
-  
-  .image {
+}
+
+.image {
     display: block;
     width: 100%;
     height: auto;
     z-index: -5;
-  }
-  
-  .over{
+}
+
+.over {
     position: absolute;
     bottom: 100%;
     left: 0;
     right: 0;
     background-color: white;
-   
+
     overflow: hidden;
     width: 100%;
-    height:0;
+    height: 0;
     transition: .5s ease;
-    
-  }
-  
-  .container:hover .over {
+
+}
+
+.container:hover .over {
     bottom: 0;
     height: 100%;
-   
-  }
-  
-  .text {
+
+}
+
+.text {
     color: black;
     font-size: 20px;
     position: absolute;
@@ -788,9 +790,9 @@ p {
     text-align: center;
     font-family: 'Playfair Display', serif;
     z-index: 4;
-  }
+}
 
-  .coninfo{
+.coninfo {
 
     display: flex;
     flex-direction: row;
@@ -798,25 +800,23 @@ p {
     padding: 30px;
     flex-wrap: wrap;
     z-index: 0;
-    
-   
 
-  }
 
-  .container{
+
+}
+
+.container {
 
     width: 20%;
     padding: 30px;
     min-width: 300px;
-    z-index:0;
-  }
+    z-index: 0;
+}
 
-  .space{
+.space {
 
     min-height: 555px;
-  }
+}
 
 
-  @media only screen and (max-width: 1020px) {
-
-  }
+@media only screen and (max-width: 1020px) {}
