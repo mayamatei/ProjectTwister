@@ -22,52 +22,53 @@
 
 <body>
     <header>
-        <div class="logoclass"><a class="logo" href="index.html"><img class="logo" src="media/Twister.jpg"></a></div>
+        <div class="logoclass"><a class="logo" href="index.html"><img class="logo" src="media/Twister.jpg"
+                    alt="logo"></a></div>
 
-        <nav>
-            <!--For web-->
-            <nav class="navbar">
-                <div class="webnav">
 
-                    <ul>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+        <!--For web-->
+        <nav class="navbar">
+            <div class="webnav">
 
-                </div>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
 
-                <!--For mobile-->
-                <div class="mobilenav">
+            </div>
 
-                    <div id="myNav" class="overlay">
+            <!--For mobile-->
+            <div class="mobilenav">
 
-                        <!-- Button to close the overlay navigation -->
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div id="myNav" class="overlay">
 
-                        <!-- Overlay content -->
-                        <div class="overlay-content">
-                            <a href="index.html" id="logomenu"><img class="logo" src="media/Twister.jpg"
-                                    alt="menu logo Home"></a>
-                            <a href="shop.html" class="menuitem">SHOP</a>
-                            <a href="gallery.html" class="menuitem">GALLERY</a>
-                            <a href="history.html" class="menuitem">HISTORY</a>
-                            <a href="contact.html" class="menuitem">CONTACT</a>
-                            <hr>
-                        </div>
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a href="index.html" id="logomenu"><img class="logo" src="media/Twister.jpg"
+                                alt="menu logo Home"></a>
+                        <a href="shop.html" class="menuitem">SHOP</a>
+                        <a href="gallery.html" class="menuitem">GALLERY</a>
+                        <a href="history.html" class="menuitem">HISTORY</a>
+                        <a href="contact.html" class="menuitem">CONTACT</a>
+                        <hr>
                     </div>
 
-                    <!-- Use any element to open/show the overlay navigation menu -->
-                    <span onclick="openNav()"></span>
-
-
-                    <!-- Use any element to open/show the overlay navigation menu -->
-                    <span class="menu" onclick="openNav()"><img class="lines" alt="menuicon" src="media/lines.PNG"
-                            width="35" height="30"></span>
                 </div>
-            </nav>
+
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span onclick="openNav()"></span>
+
+
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span class="menu" onclick="openNav()"><img class="lines" alt="menuicon" src="media/lines.PNG"
+                        width="35" height="30"></span>
+            </div>
+        </nav>
 
 
     </header>
@@ -120,27 +121,25 @@
         <section class="squares">
             <a
                 href="https://shop.hasbro.com/en-au/product/elefun-and-friends-hungry-hungry-hippos-game:106B6828-5056-900B-1051-D75C9D127122"><img
-                    class="games" src="media/hippo game.png"></a>
+                    class="games" src="media/hippogame.png" alt="hippo"></a>
         </section>
 
         <section class="squares">
             <a
                 href="https://monopoly.hasbro.com/en-us/product/monopoly-lunar-new-year-edition-board-game-for-kids-ages-8-and-up:FFFF7F80-2771-413C-AD46-2F626395D8C9"><img
-                    class="games" src="media/monopoly.png"></a>
+                    class="games" src="media/monopoly.png" alt="monopoly"></a>
         </section>
 
         <section class="squares">
             <a
                 href="https://hasbrogaming.hasbro.com/en-us/product/the-game-of-life-game:971D57C6-651A-41EE-9CE7-EE0835842E4A"><img
-                    class="games" src="media/gameoflife.png"></a>
+                    class="games" src="media/gameoflife.png" alt="gameoflife"></a>
         </section>
 
         <section class="squares">
             <a
                 href="https://shop.hasbro.com/en-us/product/pretty-pretty-princess-board-game-for-kids-ages-5-and-up:7D695C40-5EBF-4B37-8C7E-C28EDF1A72EF"><img
-                    class="games" src="media/prettyprincess.png"></a>
-        </section>
-
+                    class="games" src="media/prettyprincess.png" alt="princessgame"></a>
         </section>
 
     </div>
@@ -164,7 +163,11 @@
             </div>
 
 
-            <button class="button" type="button"><a href="#">UP!</a></button>
+
+
+            <button class="button" type="button" onclick="window.location.href='#'">
+                UP!
+            </button>
             <div>
                 <p class="copyright_text">@copyright 2022 Twister by Maya Matei<br></p>
             </div>

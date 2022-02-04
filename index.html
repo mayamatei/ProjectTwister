@@ -22,63 +22,61 @@
 
 <body class="nobg">
     <header>
-        <div class="logoclass"><a class="logo" href="index.html"><img class="logo" src="media/Twister.jpg"></a></div>
+        <div class="logoclass"><a class="logo" href="index.html"><img class="logo" src="media/Twister.jpg"
+                    alt="logo"></a></div>
 
-        <nav>
-            <!--For web-->
-            <nav class="navbar">
-                <div class="webnav">
+        <!--For web-->
+        <nav class="navbar">
+            <div class="webnav">
 
-                    <ul>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
 
-                </div>
+            </div>
 
-                <!--For mobile-->
-                <div class="mobilenav">
+            <!--For mobile-->
+            <div class="mobilenav">
 
-                    <div id="myNav" class="overlay">
+                <div id="myNav" class="overlay">
 
-                        <!-- Button to close the overlay navigation -->
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-                        <!-- Overlay content -->
-                        <div class="overlay-content">
-                            <a href="index.html" id="logomenu"><img class="logo" src="media/Twister.jpg"
-                                    alt="menu logo Home"></a>
-                            <a href="shop.html" class="menuitem">SHOP</a>
-                            <a href="gallery.html" class="menuitem">GALLERY</a>
-                            <a href="history.html" class="menuitem">HISTORY</a>
-                            <a href="contact.html" class="menuitem">CONTACT</a>
-                            <hr>
-                        </div>
-
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a href="index.html" id="logomenu"><img class="logo" src="media/Twister.jpg"
+                                alt="menu logo Home"></a>
+                        <a href="shop.html" class="menuitem">SHOP</a>
+                        <a href="gallery.html" class="menuitem">GALLERY</a>
+                        <a href="history.html" class="menuitem">HISTORY</a>
+                        <a href="contact.html" class="menuitem">CONTACT</a>
+                        <hr>
                     </div>
 
-                    <!-- Use any element to open/show the overlay navigation menu -->
-                    <span onclick="openNav()"></span>
-
-
-                    <!-- Use any element to open/show the overlay navigation menu -->
-                    <span class="menu" onclick="openNav()"><img class="lines" alt="menuicon" src="media/lines.PNG"
-                            width="35" height="30"></span>
                 </div>
-            </nav>
+
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span onclick="openNav()"></span>
 
 
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span class="menu" onclick="openNav()"><img class="lines" alt="menuicon" src="media/lines.PNG"
+                        width="35" height="30"></span>
+            </div>
+        </nav>
     </header>
 
     <main>
         <!--Video for web view-->
-        <video class="videoweb" width="100%" height="auto" loop autoplay muted>
+        <video class="videoweb" loop autoplay muted>
             <source src="media/video.mp4" type="video/mp4">
         </video>
         <!--Video for mobile-->
-        <video id="videomobile" width="100%" height="auto" loop autoplay muted>
+        <video id="videomobile" loop autoplay muted>
             <source src="media/videomobile.mp4" type="video/mp4">
         </video>
     </main>
