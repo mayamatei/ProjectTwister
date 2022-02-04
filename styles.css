@@ -343,9 +343,10 @@ body {
     .logo {
 
         display: block;
-        margin-left: auto;
+        margin-left: -10px;
         margin-right: auto;
-        width: 50%;
+        margin-right: 5px;
+        width: 100%;
 
 
     }
